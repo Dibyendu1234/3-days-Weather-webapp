@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div id="maincon" class="container ">
+
+
+        <div id="loader" class="loading hidden">
+            <div></div>
+        </div>
+        <div class="forcast hidden">
+            <p class="design" id="cityname">Jalpaiguri</p>
+
+            <div class="forcastdiv">
+
+                <div class="day box">
+                </div>
+                <div class="day box">
+                </div>
+                <div class="day box">
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="weather">
+            <div class="weather1">17°</div>
+            <div class="weather2">
+                <p>Loca</p>
+                <span>11:01 - Monday 2022-06-22</span>
+            </div>
+
+            <div class="weather3">
+                <p><img src="" alt="" /></p>
+                <span></span>
+            </div>
+            <div>
+                <span id="wind">Wind Speed</span>
+                <p class="wind weather4">wind</p>
+            </div>
+        </div>
+
+
+        <!-- Add this code inside the container div -->
+        <!-- <div class="favorites-container">
+            <h2>Favorites</h2>
+            <ul id="favorites_list"></ul>
+        </div> -->
+        <div>
+            <button class="button-17 btn" id="favC">Add City</button>
+            <button class="button-17 btn" id="RemoveCity">Remove City</button>
+            <button class="button-17 btn" id="mode">Night</button>
+            <button class="button-17" id="Forcast">Forcast</button>
+        </div>
+        <div id="favcity-div">
+            <h1>Favorite Locations</h1>
+            <!-- <li>Jalpaiguri</li>
+            <li>Jalpaiguri</li> -->
+        </div>
+    </div>
+
+
+
+    <nav>
+        <form>
+            <input type="text" placeholder="Search Location" class="searchField" />
+            <button type="submit">Search</button>
+        </form>
+    </nav>
+</body>
+<script src="./index.js"></script>
+
+</html>
